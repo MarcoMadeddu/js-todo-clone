@@ -34,6 +34,7 @@
   font-size: 16px;
   outline: none;
   opacity: 0.8;
+  cursor: pointer;
   transition: transform .5s;
 }
 
@@ -55,6 +56,16 @@
   padding-bottom: 5px;
   margin-bottom: 10px;
   border-bottom: 1px solid white;
+  cursor: pointer;
+  transition: transform .5s;
+}
+
+.element:hover{
+  transform: scale(1.1);
+}
+
+.todo i{
+  cursor: pointer;
 }
 
 .element:last-child{
@@ -63,4 +74,8 @@
 
 .template{
   display: none;
+}
+
+.done{
+   text-decoration: line-through;
 }
